@@ -57,6 +57,7 @@ static struct {
 	{"solaris",	Hsolaris},
 	{"windows",	Hwindows},
 	{"windowsgui",	Hwindows},
+	{"nsx",Hnsx},
 	{0, 0},
 };
 
@@ -131,6 +132,7 @@ linknew(LinkArch *arch)
 	case Hwindows:
 		break;
 	case Hlinux:
+	case Hnsx:
 	case Hfreebsd:
 	case Hnetbsd:
 	case Hopenbsd:

@@ -1910,6 +1910,7 @@ prefixof(Link *ctxt, Addr *a)
 		case Hdragonfly:
 		case Hfreebsd:
 		case Hlinux:
+		case Hnsx:
 		case Hnetbsd:
 		case Hopenbsd:
 		case Hsolaris:

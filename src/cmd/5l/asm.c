@@ -658,6 +658,7 @@ asmb(void)
 		LPUT(lcsize);
 		break;
 	case Hlinux:
+	case Hnsx:
 	case Hfreebsd:
 	case Hnetbsd:
 	case Hopenbsd:

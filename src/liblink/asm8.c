@@ -2694,6 +2694,7 @@ mfound:
 			sysfatal("unknown TLS base location for %s", headstr(ctxt->headtype));
 
 		case Hlinux:
+		case Hnsx:
 		case Hnacl:
 			// ELF TLS base is 0(GS).
 			pp.from = p->from;

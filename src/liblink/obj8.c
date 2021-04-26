@@ -96,6 +96,7 @@ canuselocaltls(Link *ctxt)
 {
 	switch(ctxt->headtype) {
 	case Hlinux:
+	case Hnsx:
 	case Hnacl:
 	case Hplan9:
 	case Hwindows:

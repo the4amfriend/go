@@ -65,6 +65,7 @@ archinit(void)
 	case Hdragonfly:
 	case Hfreebsd:
 	case Hlinux:
+	case Hnsx:
 	case Hnetbsd:
 	case Hopenbsd:
 		break;
@@ -95,6 +96,7 @@ archinit(void)
 			INITRND = 4096;
 		break;
 	case Hlinux:	/* elf32 executable */
+	case Hnsx:
 	case Hfreebsd:
 	case Hnetbsd:
 	case Hopenbsd:

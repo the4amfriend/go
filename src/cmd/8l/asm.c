@@ -705,6 +705,7 @@ asmb(void)
 		asmbmacho();
 		break;
 	case Hlinux:
+	case Hnsx:
 	case Hfreebsd:
 	case Hnetbsd:
 	case Hopenbsd:

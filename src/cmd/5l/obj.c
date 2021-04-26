@@ -62,6 +62,7 @@ archinit(void)
 			sysfatal("cannot use -linkmode=external with -H %s", headstr(HEADTYPE));
 		break;
 	case Hlinux:
+	case Hnsx:
 	case Hfreebsd:
 	case Hnacl:
 		break;
@@ -81,6 +82,7 @@ archinit(void)
 			INITRND = 4096;
 		break;
 	case Hlinux:	/* arm elf */
+	case Hnsx:
 	case Hfreebsd:
 	case Hnetbsd:
 		debug['d'] = 0;	// with dynamic linking

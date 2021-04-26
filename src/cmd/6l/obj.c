@@ -73,6 +73,7 @@ archinit(void)
 	case Hdragonfly:
 	case Hfreebsd:
 	case Hlinux:
+	case Hnsx:
 	case Hnacl:
 	case Hnetbsd:
 	case Hopenbsd:
@@ -113,6 +114,7 @@ archinit(void)
 			INITDAT = 0;
 		break;
 	case Hlinux:		/* elf64 executable */
+	case Hnsx:
 	case Hfreebsd:		/* freebsd */
 	case Hnetbsd:		/* netbsd */
 	case Hopenbsd:		/* openbsd */

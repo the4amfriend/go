@@ -675,6 +675,7 @@ asmb(void)
 		debug['8'] = 1;	/* 64-bit addresses */
 		break;
 	case Hlinux:
+	case Hnsx:
 	case Hfreebsd:
 	case Hnetbsd:
 	case Hopenbsd:
@@ -706,6 +707,7 @@ asmb(void)
 			symo = segdata.fileoff+rnd(segdata.filelen, INITRND)+machlink;
 			break;
 		case Hlinux:
+		case Hnsx:
 		case Hfreebsd:
 		case Hnetbsd:
 		case Hopenbsd:
@@ -788,6 +790,7 @@ asmb(void)
 		asmbmacho();
 		break;
 	case Hlinux:
+	case Hnsx:
 	case Hfreebsd:
 	case Hnetbsd:
 	case Hopenbsd:
